@@ -24,6 +24,8 @@ pip3 install -r requirements.txt
 Edit `.env` to include credentials
 Edit `list.txt` to include the subreddits you want to subscribe to
 
+> You can get your current subscribed subreddits [here](https://old.reddit.com/subreddits/mine) and use [this tool](https://onlinetexttools.com/split-text) to split the text
+
 And run it
 
 `python3 ./main.py`
