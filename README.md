@@ -1,13 +1,29 @@
-process a batch of subreddits, subscribing to each of them
+# Reddit Batch Subscribe, in python
+Process a batch of subreddits, subscribing to each of them
 
-# setup
-1. run `git clone https://github.com/lfender6445/reddit-batch-subscribe`
-2. run `cp .env.example .env`
-3. edit `.env` to include credentials
-4. edit `list.txt` to include the subreddits you want to subscribe to
-5. install deps and run the script, see below
+## Requirements
+- Python3
+- Pip3
+- Dependencies in requirements.txt
 
-```sh
+## Setup
+First, create authentification [following this instructions](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps).
+
+Then, execute the following commands
+
+```bash
+git clone https://github.com/VoidlessSeven7/Reddit-Batch-Subscribe
+
+cd Reddit-Batch-Subscribe
+
+cp .env.example .env
+
 pip3 install -r requirements.txt
-python3 batch-subscribe.py
 ```
+
+Edit `.env` to include credentials
+Edit `list.txt` to include the subreddits you want to subscribe to
+
+And run it
+
+`python3 ./main.py`
