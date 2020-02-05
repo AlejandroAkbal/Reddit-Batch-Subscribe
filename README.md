@@ -14,9 +14,9 @@ Then, execute the following commands
 ```bash
 git clone https://github.com/VoidlessSeven7/Reddit-Batch-Subscribe.git
 
-cd Reddit-Batch-Subscribe
+cd ./Reddit-Batch-Subscribe
 
-cp .env.example .env
+cp ./env.example .env
 
 pip3 install -r requirements.txt
 ```
