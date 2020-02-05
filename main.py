@@ -25,3 +25,5 @@ with open('list.txt', 'r') as f:
         # sleep(0.1) # Wait some time to not overload reddit # EDIT: already does it by default
         print('Subscribing to', subreddit)
         reddit.subreddit(subreddit).subscribe()
+
+    print('\nCongratulations, you have subscribed to every subreddit!')
