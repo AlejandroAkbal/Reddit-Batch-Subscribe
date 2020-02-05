@@ -12,7 +12,7 @@ First, create authentification [following this instructions](https://github.com/
 Then, execute the following commands
 
 ```bash
-git clone https://github.com/VoidlessSeven7/Reddit-Batch-Subscribe
+git clone https://github.com/VoidlessSeven7/Reddit-Batch-Subscribe.git
 
 cd Reddit-Batch-Subscribe
 
