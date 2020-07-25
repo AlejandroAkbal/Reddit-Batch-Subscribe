@@ -31,10 +31,10 @@ with open('list.txt', 'r') as f:
 
         # Exceptions, you can add more if you wish
         except Forbidden:
-            print(f'Subrrddit {subreddit} does not exist')
+            print(f'Subrrddit {subreddit} is private/quarantined/banned')
 
         except NotFound:
-            print(f'Subreddit {subreddit} not found')
+            print(f'Subreddit {subreddit} does not exist')
 
     print('Congratulations, you have subscribed to every subreddit')
     print(exist)                                                                                                                                                                                           ~                                                                                                                                                                                                                  ~                             
