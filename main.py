@@ -3,6 +3,9 @@ from time import sleep
 
 import praw
 from dotenv import load_dotenv
+from prawcore.exceptions import Forbidden
+from prawcore.exceptions import NotFound
+
 
 # Load environment variables
 load_dotenv()
@@ -22,8 +25,16 @@ print('Logged in as %s\n' % reddit.user.me())
 with open('list.txt', 'r') as f:
     list = f.readlines()
     for subreddit in list:
-        # sleep(0.1) # Wait some time to not overload reddit # EDIT: already does it by default
-        print('Subscribing to', subreddit)
-        reddit.subreddit(subreddit).subscribe()
+        try:
+            print(f'Subscribing to {subreddit}')
+            reddit.subreddit(subreddit).subscribe()
 
-    print('\nCongratulations, you have subscribed to every subreddit!')
+        # Exceptions, you can add more if you wish
+        except Forbidden:
+            print(f'Subrrddit {subreddit} is private/quarantined/banned')
+
+        except NotFound:
+            print(f'Subreddit {subreddit} does not exist')
+
+    print('Congratulations, you have subscribed to every subreddit')
+    print(exist)                                                                                                                                                                                           ~                                                                                                                                                                                                                  ~                             
