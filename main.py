@@ -31,7 +31,7 @@ with open('list.txt', 'r') as f:
 
         # Exceptions, you can add more if you wish
         except Forbidden:
-            print(f'Subrrddit {subreddit} is private/quarantined/banned')
+            print(f'Subreddit {subreddit} is private/quarantined/banned')
 
         except NotFound:
             print(f'Subreddit {subreddit} does not exist')
