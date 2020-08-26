@@ -36,5 +36,5 @@ with open('list.txt', 'r') as f:
         except NotFound:
             print(f'Subreddit {subreddit} does not exist')
 
-    print('Congratulations, you have subscribed to every subreddit')
     print(exist)                                                                                                                                                                                           ~                                                                                                                                                                                                                  ~                             
+    print('\nCongratulations, you have subscribed to every subreddit!')
