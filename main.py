@@ -1,10 +1,10 @@
 import os
 from time import sleep
 
-import praw
 from dotenv import load_dotenv
-from prawcore.exceptions import Forbidden
-from prawcore.exceptions import NotFound
+
+import praw
+from prawcore.exceptions import Forbidden, NotFound
 
 
 # Load environment variables
