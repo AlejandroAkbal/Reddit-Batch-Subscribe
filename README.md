@@ -1,12 +1,15 @@
 # Reddit Batch Subscribe, in python
+
 Process a batch of subreddits, subscribing to each of them
 
 ## Requirements
+
 - Python3
 - Pip3
 - Dependencies in requirements.txt
 
 ## Setup
+
 First, create authentification [following this instructions](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps).
 
 Then, execute the following commands
